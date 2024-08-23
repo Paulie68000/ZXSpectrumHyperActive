@@ -10485,7 +10485,7 @@ MountainMapLoop:
 	PUSH DE
 	PUSH HL
 	LD   A,(HL)			; first on screen tile addr in HL
-	ADD  A,$20
+	ADD  A,low MountainTileAddrOffsets
 	LD   L,A
 	LD   A,(HL)			; $8120 MountainTileAddrOffsets MountainTileAddrOffsets
 	INC  L
